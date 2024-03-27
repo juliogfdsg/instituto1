@@ -1,0 +1,322 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+::selection{
+  color: #fff;
+ 
+}
+.wrapper{
+  width: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  color: rgb(20,225,150);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form{
+  height: 167px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed rgb(20,225,150);
+}
+form :where(i, p){
+  color: rgb(20,225,150);
+  cursor: pointer;
+}
+form i{
+    margin-top: 10px;
+  font-size: 50px;
+}
+form p{
+    
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+section .row{
+  margin-bottom: 10px;
+  background: #ffffff;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color: rgb(20,225,150);
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background: rgb(20,225,150);
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 232px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check{
+  font-size: 16px;
+}
+
+.enviar{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 120px; /* Isso faz com que o botão seja redondo */
+    background-color: rgb(61, 230, 168);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.enviar :hover{
+    background-color: rgb(33, 202, 137);
+}
+
+input[type="file"]{
+    display: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  
+  
+  a:hover {
+    color: rgb(20,225,150);
+    opacity: 0.7;
+  }
+  
+  .logo {
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+  }
+  
+  .logo {
+    
+    font-family: 'poppins 300';
+    height: 15%;
+    background-color: rgb(210,252,236);
+  }
+  
+  
+  
+  nav {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'poppins 700', sans-serif;
+    background: #FFF;
+    height: 10vh;
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    font-family: 'poppins';
+    font-weight: 300;
+    letter-spacing: 0px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+   
+    display: none;
+    cursor: pointer;
+  }
+  .mobile-menu .logo{
+    justify-content: space-around;
+  }
+  
+  
+  .mobile-menu div {
+    
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+    @media (max-width: 9999px) {
+    body {
+      overflow-x: hidden;
+    }
+    }
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    
+    nav {
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'poppins 700', sans-serif;
+      background: #ffffff;
+      height: 15vh;
+    }
+  
+    .nav-list {
+      position: absolute;
+      top: 20vh;
+      right: 0;
+      width: 100vw;
+      height: 92vh;
+      background: rgb(255, 255, 255);
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 10%;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+     
+      display: block;
+    }
+    
+    .logo {
+      position: relative;
+      font-family: 'poppins 300';
+      height: 18%;
+      background-color: rgb(210,252,236);
+    }
+
+    #dov{
+        display: flex;
+      }
+
+      .wrapper{
+        
+        background: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+      }
+
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+      }
+      
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+
+      #dov{
+        display: none;
+      }
